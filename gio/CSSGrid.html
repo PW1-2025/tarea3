@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Celulares | SmartShop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #001f3f;
+            color: #fff;
+            text-align: center;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 100px 20px;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        .banner {
+            grid-column: span 3;
+            background: linear-gradient(90deg, #003399, #007bff);
+            color: white;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .producto {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            color: #000;
+        }
+        .producto:hover {
+            transform: translateY(-10px);
+        }
+        .producto img {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .producto h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .producto p {
+            font-size: 16px;
+            text-align: center;
+        }
+        .producto .precio {
+            font-size: 26px;
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 15px 0;
+        }
+        .boton {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .boton:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="header">Encuentra el Smartphone Perfecto para Ti</div>
+    <div class="container">
+        <div class="banner">¡Obtén descuentos exclusivos al pagar con UENO BANK!</div>
+        
+        <!-- 
+            PRODUCTOS: cada uno ocupa 1 columna del grid.
+            En la  pantalla  se mostrarán 3 columnas.
+        -->
+
+        <!-- Columna 1 -->
+        <div class="producto">
+            <img src="https://www.hd-tecnologia.com/imagenes/articulos/2024/11/Se-filtran-las-primeras-imagenes-del-Samsung-Galaxy-S25-Ultra-y-seria-muchos-mas-caro-que-el-S24-Ultra.jpg" alt="Celular 1">
+            <h2>SAMSUNG S25 ULTRA 256GB</h2>
+            <p>Procesador de última generación y autonomía prolongada.</p>
+            <p class="precio">$899.99</p>
+            <a href="#" class="boton">Comprar ahora</a>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="producto">
+            <img src="https://static.wixstatic.com/media/2b1bda_2ec7a3a6bd9042608f4ebade4a946434~mv2.jpg/v1/fill/w_480,h_259,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2b1bda_2ec7a3a6bd9042608f4ebade4a946434~mv2.jpg" alt="Celular 2">
+            <h2>IPHONE 16 PRO MAX 256GB </h2>
+            <p>Cámara profesional con IA y pantalla envolvente.</p>
+            <p class="precio">$999.99</p>
+            <a href="#" class="boton">Comprar ahora</a>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="producto">
+            <img src="https://i.blogs.es/722c0a/1/1366_2000.jpeg" alt="Celular 3">
+            <h2>XIAOMI 14 256GB</h2>
+            <p>Experiencia visual 4K y sonido envolvente.</p>
+            <p class="precio">$859.99</p>
+            <a href="#" class="boton">Comprar ahora</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 SmartShop | Todos los derechos reservados</p>
+        <p>Contacto: info@smartshop.com | Teléfono: +123 456 789</p>
+    </div>
+</body>
+</html>
