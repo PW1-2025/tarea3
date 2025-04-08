@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: white;
+  color: #1a1a1a;
+}
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.boton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.boton-secundario {
+  background: white;
+  color: #0b5fff;
+  border: 2px solid #0b5fff;
+}
+.tarjetas-precio {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.tarjetas-precio .tarjeta {
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.tarjetas-precio .tarjeta h2 {
+  margin-top: 0;
+}
+.tarjetas-precio .tarjeta .precio {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.tarjetas-precio .tarjeta .nota {
+  font-size: 0.8rem;
+  color: gray;
+}
+.tarjetas-precio .tarjeta ul {
+  padding-left: 1rem;
+}
+.tarjetas-precio .tarjeta ul li {
+  margin: 0.5rem 0;
+}
+footer{
+  background: #054686;
+  padding: 2rem;
+  text-align: left; 
+  color: #ffffff;
+  margin-top: 1rem;
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:large;
+}

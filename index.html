@@ -4,81 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Moderno - Guía</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pasarela de pagos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-
-    <header>
-        <h1>CSS Moderno - Repositorio Colaborativo</h1>
-        <p>Explora diferentes técnicas y frameworks CSS para el desarrollo web moderno.</p>
+    <header class="encabezado">
+        <h1>JORDISTORE</h1>
     </header>
-
-    <main>
-        <section>
-            <h2>🔍 ¿Por qué aprender esto?</h2>
-            <p>El CSS ha evolucionado enormemente desde sus inicios. Aprender diferentes técnicas y herramientas permite
-                a los desarrolladores adaptarse rápidamente a nuevos entornos laborales.</p>
-        </section>
-
-        <section>
-            <h2>📌 Técnicas y Herramientas de CSS</h2>
+    <section class="tarjetas-precio">
+        <div class="tarjeta gratis">
+            <h2>Gratis</h2>
+            <p class="precio">$0</p>
+            <button class="boton boton-secundario">Comenzar</button>
             <ul>
-                <li><a href="ejercicios/tablas.html">Diseño con Tablas</a></li>
-                <li><a href="ejercicios/float.html">Diseño con Float</a></li>
-                <li><a href="ejercicios/position.html">Diseño con Position</a></li>
-                <li><a href="ejercicios/flex.html">Diseño con Flexbox</a></li>
-                <li><a href="ejercicios/grid.html">Diseño con CSS Grid</a></li>
-                <li><a href="ejercicios/bootstrap.html">Diseño con Bootstrap</a></li>
-                <li><a href="ejercicios/tailwind.html">Diseño con Tailwind CSS</a></li>
-                <li><a href="ejercicios/bulma.html">Diseño con Bulma</a></li>
-                <li><a href="ejercicios/foundation.html">Diseño con Foundation</a></li>
-                <li><a href="ejercicios/materialize.html">Diseño con Materialize</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>🎨 Preprocesadores CSS</h2>
-            <p>Los preprocesadores permiten escribir código CSS más eficiente y mantenible.</p>
-            <ul>
-                <li><a href="ejemploscss.html">Ejemplo en SASS/SCSS - Lucas Godoy</a></li>
-                <li><a href="ejemploscss.html">Ejemplo en SASS</a></li>
-                <li><a href="areco/arecoplanes.html">Ejemplo en SCSS</a></li>
-                <li><a href="scss/ejemplo.less">Ejemplo en LESS</a></li>
-
-                <li><a href="stylus-salma/salmi.html">Ejemplo en Stylus</a></li>
-                <li><a href="scss/ejemplo.postcss">Ejemplo en PostCSS</a></li>
-
-                <li><a href="scss/ejemplo.stylus">Ejemplo en Stylus</a></li>
-                <li><a href="scss-ale-rojas/ejemplopostcss.html">Ejemplo en PostCSS</a></li>
-
-            </ul>
-        </section>
-
-        <section>
-            <h2>🛠️ Metodología BEM</h2>
-            <p>BEM (Block, Element, Modifier) es una metodología que ayuda a escribir CSS escalable y reutilizable.</p>
-            <ul>
-                <li><a href="ejercicios/BEM.html">Ejemplo de BEM</a></li>
-            </ul>
-        </section>
-    </main>
-
-
-    <footer id="how-to-use" style="margin-top: 50px;">
-        <div class="container">
-            <h2>¿Cómo usar este repositorio?</h2>
-            <ul>
-                <li>✔ Los alumnos deben hacer <strong>pull requests</strong> para completar los archivos de
-                    <code>/ejercicios</code>.
-                </li>
-                <li>✔ Cada ejercicio usa una técnica distinta de <strong>CSS</strong>.</li>
-                <li>✔ Se alienta el uso de <strong>preprocesadores</strong> y <strong>BEM</strong>.</li>
-                <li>✔ Se puede visualizar en <strong>GitHub Pages</strong>.</li>
+                <li>Acceso limitado a la plataforma</li>
+                <li>Historial de cambios por 3 días</li>
+                <li>Lista de usuarios nuevos</li>
+                <li>1 instalación de Ubuntu incluída</li>
             </ul>
         </div>
-    </footer>
 
+        <div class="tarjeta estandar">
+            <h2>Estándar</h2>
+            <p class="precio">$19.99</p>
+            <button class="boton boton-secundario">Comenzar</button>
+            <ul>
+                <li>Todo lo del plan Gratis +</li>
+                <li>5 vistas de usuarios accedidos</li>
+                <li>Coaching con IA</li>
+                <li>Una distro distinta de Linux 😁🥳</li>
+            </ul>
+        </div>
+
+        <div class="tarjeta empresarial">
+            <h2>Empresarial</h2>
+            <p class="precio">$39.99</p>
+            <button class="boton boton-secundario">Contáctanos</button>
+            <ul>
+                <li>Vistas ilimitadas</li>
+                <li>Historial de cambios ilimitado</li>
+                <li>Un beso del desarrollador (limitado, no se pase)</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>©2025 José Sebastián Gómez Silva. Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>

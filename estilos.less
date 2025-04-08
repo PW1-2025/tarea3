@@ -1,0 +1,71 @@
+@color-primario: #0b5fff;
+@color-secundario: #f0f4f8;
+@color-texto: #1a1a1a;
+@radio-borde: 10px;
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: white;
+    color: @color-texto;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &-secundario {
+        background: white;
+        color: @color-primario;
+        border: 2px solid @color-primario;
+    }
+}
+
+.tarjetas-precio {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+
+    .tarjeta {
+        background: @color-secundario;
+        border-radius: @radio-borde;
+        padding: 1.5rem;
+        width: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .precio {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .nota {
+            font-size: 0.8rem;
+            color: gray;
+        }
+
+        ul {
+            padding-left: 1rem;
+
+            li {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
