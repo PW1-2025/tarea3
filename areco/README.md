@@ -1,80 +1,80 @@
-# Guía de Uso - Proyecto con SASS
+Guía de Uso para SCSS
+Introducción a SCSS
 
-Este archivo tiene como objetivo proporcionar una guía general para trabajar con proyectos que utilizan preprocesadores CSS como SASS (Syntactically Awesome Style Sheets). Como ejemplo, utilizaremos un proyecto que contiene una página web con planes de hosting y sus respectivos estilos, y que usa SASS para la creación de los estilos.
+SCSS (Sassy CSS) es una extensión de CSS que agrega funcionalidades adicionales como variables, anidamiento de reglas, mixins, funciones y herencia. Estas características permiten escribir código CSS más organizado, reutilizable y eficiente.
+Beneficios de SCSS:
 
-## ¿Qué es SASS?
+    Variables: Guarda valores reutilizables (colores, tamaños, etc.) que pueden ser usados en todo el archivo.
 
-SASS es un preprocesador CSS que permite escribir código CSS de manera más eficiente y estructurada. Con SASS, podemos usar características como variables, anidamiento de reglas, mixins, entre otras, para hacer que nuestro código sea más limpio y reutilizable.
+    Anidamiento: Permite escribir reglas dentro de otras, reflejando la estructura HTML, lo que mejora la legibilidad.
 
-### Características clave de SASS:
-- **Variables**: Permiten almacenar valores como colores, tamaños y fuentes para reutilizarlos en todo el proyecto.
-- **Anidamiento**: Nos permite anidar las reglas de CSS dentro de otras reglas para una estructura más clara.
-- **Mixins y funciones**: Facilitan la reutilización de bloques de código y cálculos.
+    Mixins: Define bloques de código reutilizables que pueden ser incluidos en cualquier parte.
 
-## Estructura General del Proyecto
+    Operaciones matemáticas: Puedes realizar operaciones dentro de SCSS (suma, resta, multiplicación, etc.) para trabajar dinámicamente con tamaños y valores.
 
-Aquí te mostramos la estructura del proyecto:
+Instalación de Herramientas
 
-
-### Archivos principales:
-
-1. **`arecoplanes.html`**: Archivo HTML que contiene la estructura de la página web, en este caso, los planes de hosting.
-2. **`arecoplanes.scss`**: Archivo SCSS donde están definidos los estilos, utilizando variables, anidamiento y otros conceptos de SASS.
-3. **`arecoplanes.css`**: Archivo CSS generado después de compilar el archivo SCSS. Este es el archivo que se utiliza en la página web.
-
-## Pasos para Trabajar con SASS
-
-### 1. Instalación de Herramientas
-
-Para compilar los archivos SASS a CSS, necesitas tener instalados Node.js, npm y SASS. Aquí te mostramos cómo instalarlos en Linux y Windows.
-
-#### En Linux:
-
-1. **Instalar Node.js y npm** (si aún no están instalados):
-
-   ```bash
-   sudo apt update
-   sudo apt install nodejs npm
-
-Instalar SASS:
-
-    sudo npm install -g sass
-
-En Windows:
+Antes de empezar a escribir y compilar SCSS, necesitas instalar algunas herramientas esenciales: Node.js, npm y SASS. Aquí te dejo los pasos para instalar en Linux y Windows.
+1. Instalación en Linux
 
     Instalar Node.js y npm:
 
-        Dirígete a Node.js y descarga la última versión estable.
+sudo apt update
+sudo apt install nodejs npm
 
-        Sigue las instrucciones del instalador.
+Instalar SASS (usando npm):
+
+    sudo npm install -g sass
+
+2. Instalación en Windows
+
+    Instalar Node.js:
+
+        Ve a Node.js y descarga la última versión estable. Luego, sigue las instrucciones del instalador.
 
     Instalar SASS:
 
-    Abre la terminal y ejecuta:
+    Abre el terminal y ejecuta el siguiente comando:
 
     npm install -g sass
 
-2. Compilación de SCSS a CSS
+Estructura del Proyecto
 
-En nuestro ejemplo, el archivo SCSS principal es arecoplanes.scss, el cual debe ser compilado para generar el archivo CSS correspondiente. Para hacerlo, seguimos estos pasos:
-En Linux:
+La estructura básica de un proyecto SCSS puede ser algo como esto:
 
-    Navega al directorio scss donde está el archivo arecoplanes.scss:
+mi-proyecto/
+├── index.html                # Archivo HTML
+├── css/
+│   └── estilos.css           # Archivo CSS generado
+├── scss/
+│   └── estilo.scss           # Archivo SCSS
+└── README.md                 # Guía del proyecto
 
-cd /var/www/html/tarea3/areco/scss
+Archivos principales:
 
-Ejecuta el siguiente comando para compilar el archivo SCSS:
+    index.html: Contiene el contenido de la página web.
 
-    sass arecoplanes.scss ../arecoplanes.css
+    estilos.scss: El archivo principal donde se escriben los estilos SCSS.
 
-    Esto generará el archivo arecoplanes.css en el directorio principal del proyecto.
+    estilos.css: El archivo CSS generado después de compilar SCSS. Este es el archivo que se incluye en la página HTML.
 
-En Windows:
+Compilación de SCSS a CSS
 
-    Abre la terminal en el directorio donde se encuentra el archivo arecoplanes.scss.
+Una de las tareas más importantes al trabajar con SCSS es compilar los archivos SCSS a CSS, ya que los navegadores solo entienden CSS. Existen diferentes maneras de hacer esto, y aquí te explico cómo hacerlo de manera manual y automática.
+Compilación Manual
 
-    Ejecuta el siguiente comando para compilar el archivo SCSS:
+    Accede al directorio donde está el archivo SCSS. Abre la terminal y navega al directorio que contiene el archivo estilo.scss.
 
-    sass arecoplanes.scss ..\arecoplanes.css
+    Ejecuta el siguiente comando para compilar SCSS a CSS:
 
-    Esto generará el archivo arecoplanes.css en la raíz del proyecto.
+    sass scss/estilo.scss css/estilos.css
+
+    Este comando convierte el archivo estilo.scss en estilos.css en la carpeta css/.
+
+Compilación Automática
+
+Para automatizar la compilación de SCSS cada vez que guardas el archivo, usa el siguiente comando. Esto hará que SCSS se compile automáticamente cada vez que haya cambios:
+
+sass --watch scss/estilo.scss:css/estilos.css
+
+Esto asegura que siempre que guardes cambios en estilo.scss, el archivo estilos.css se actualice en consecuencia.
