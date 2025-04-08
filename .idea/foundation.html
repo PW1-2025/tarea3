@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Completa sobre Foundation CSS</title>
+    <!-- Incluir Foundation desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+</head>
+<body>
+
+<!-- Contenedor principal con grillas -->
+<div class="grid-container">
+    <!-- Header -->
+    <header class="grid-x grid-padding-x align-middle">
+        <div class="cell small-12 text-center">
+            <h1>Foundation CSS: Características y Ejemplos</h1>
+        </div>
+    </header>
+
+    <!-- Sección de introducción -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>1. ¿Qué es Foundation CSS?</h2>
+            <p>Foundation CSS es un framework front-end creado por ZURB que facilita el desarrollo de sitios web y aplicaciones móviles con diseño responsivo y componentes UI reutilizables. Es popular por su flexibilidad y capacidad para crear interfaces de usuario adaptables a diferentes dispositivos y resoluciones.</p>
+        </div>
+    </section>
+
+    <!-- Características clave -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>2. Características Clave de Foundation</h2>
+            <ul>
+                <li><strong>Sistema de grillas flexible (Flexbox y Grid)</strong>: Ofrece un sistema de grillas basado tanto en Flexbox como en CSS Grid.</li>
+                <li><strong>Diseño Mobile-First</strong>: Optimizado primero para móviles, y luego para pantallas más grandes.</li>
+                <li><strong>Componentes de UI preconstruidos</strong>: Incluye botones, menús, tarjetas, formularios, tablas, etc.</li>
+                <li><strong>Media Queries</strong>: Proporciona puntos de ruptura preconfigurados.</li>
+                <li><strong>Modularidad</strong>: Solo usas las partes del framework que necesitas.</li>
+                <li><strong>Sass y personalización</strong>: Construido con Sass, permite una personalización avanzada.</li>
+                <li><strong>Accesibilidad</strong>: Cumple con las pautas de accesibilidad web.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Componentes y ejemplos -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>3. Componentes y Ejemplos</h2>
+
+            <!-- Sistema de Grillas -->
+            <h3>3.1 Sistema de Grillas</h3>
+            <p>Ejemplo de sistema de grillas:</p>
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-6 large-4">
+                    Columna 1 (small-12, medium-6, large-4)
+                </div>
+                <div class="cell small-12 medium-6 large-8">
+                    Columna 2 (small-12, medium-6, large-8)
+                </div>
+            </div>
+
+            <!-- Botones -->
+            <h3>3.2 Botones</h3>
+            <p>Ejemplo de botones con estilos predefinidos:</p>
+            <a href="#" class="button">Botón Principal</a>
+            <a href="#" class="button secondary">Botón Secundario</a>
+            <a href="#" class="button success">Éxito</a>
+
+            <!-- Menús -->
+            <h3>3.3 Menús</h3>
+            <p>Ejemplo de menú horizontal:</p>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <!-- Modal -->
+            <h3>3.4 Modal</h3>
+            <p>Ejemplo de modal emergente:</p>
+            <a href="#" class="button" data-open="exampleModal1">Abrir Modal</a>
+            <div class="reveal" id="exampleModal1" data-reveal>
+                <h1>Título del Modal</h1>
+                <p>Este es el contenido del modal.</p>
+                <button class="close-button" data-close>&times;</button>
+            </div>
+
+            <!-- Formularios -->
+            <h3>3.5 Formularios</h3>
+            <p>Ejemplo de formulario de contacto:</p>
+            <form>
+                <label>Nombre
+                    <input type="text" placeholder="Ingresa tu nombre">
+                </label>
+                <label>Email
+                    <input type="email" placeholder="Ingresa tu email">
+                </label>
+                <label>Mensaje
+                    <textarea placeholder="Escribe tu mensaje aquí"></textarea>
+                </label>
+                <button type="submit" class="button success">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Ventajas y desventajas -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>4. Ventajas y Desventajas</h2>
+            <h3>Ventajas:</h3>
+            <ul>
+                <li>Flexibilidad y personalización avanzada con Sass.</li>
+                <li>Enfoque Mobile-First para un diseño adaptable.</li>
+                <li>Accesibilidad mejorada para usuarios con discapacidades.</li>
+                <li>Modularidad: solo se usa lo necesario.</li>
+            </ul>
+            <h3>Desventajas:</h3>
+            <ul>
+                <li>Curva de aprendizaje más pronunciada.</li>
+                <li>Menos popularidad que Bootstrap, por lo que tiene una comunidad más pequeña.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Estructura del Proyecto -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>5. Estructura de un Proyecto con Foundation</h2>
+            <p>Una estructura típica de proyecto utilizando Foundation incluye los siguientes archivos:</p>
+            <pre>
+/css
+   └─ foundation.css    // Archivo Foundation CSS
+/js
+   └─ foundation.js     // Archivo Foundation JS
+/index.html             // Página principal
+                </pre>
+        </div>
+    </section>
+
+    <!-- Instalación -->
+    <section class="grid-x grid-padding-x">
+        <div class="cell small-12">
+            <h2>6. Instalación de Foundation</h2>
+            <h3>CDN:</h3>
+            <pre>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"&gt;&lt;/script&gt;
+                </pre>
+            <h3>NPM:</h3>
+            <p>También puedes instalarlo usando NPM:</p>
+            <pre>
+npm install foundation-sites
+                </pre>
+            <p>Luego, puedes importar Foundation en tu archivo de Sass principal:</p>
+            <pre>
+@import 'foundation-sites/scss/foundation';
+@include foundation-everything;
+                </pre>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="grid-x grid-padding-x align-middle">
+        <div class="cell small-12 text-center">
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Incluir Foundation JS desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

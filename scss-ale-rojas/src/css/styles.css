@@ -1,0 +1,174 @@
+/* Configuración base */
+:root {
+    --primary-color: #4a6bff;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --light-gray: #e9ecef;
+    --medium-gray: #adb5bd;
+    --dark-gray: #495057;
+    --white: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  /* Reset y estilos generales */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .exit-instruction {
+    margin-bottom: 20px;
+    color: var(--medium-gray);
+    font-size: 0.9rem;
+    
+    strong {
+      font-weight: 600;
+    }
+  }
+  
+  /* Encabezado de precios */
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--dark-gray);
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Opciones de facturación */
+  .billing-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    
+    .monthly, .yearly {
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: var(--transition);
+      
+      &.active {
+        background-color: var(--primary-color);
+        color: var(--white);
+      }
+    }
+    
+    .save {
+      background-color: #e6f7ff;
+      color: var(--primary-color);
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+  }
+  
+  /* Tarjetas de precios */
+  .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    
+    ul {
+      padding-left: 20px;
+      margin: 0;
+      
+      li {
+        margin-bottom: 10px;
+        list-style-type: none;
+        position: relative;
+        padding-left: 15px;
+        
+        &:before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  
+  /* Estilos específicos para cada tarjeta */
+  .standard {
+    border-top: 4px solid #4a6bff;
+  }
+  
+  .business {
+    border-top: 4px solid #6c5ce7;
+    
+    h3 {
+      color: #6c5ce7;
+    }
+    
+    ul li:before {
+      color: #6c5ce7;
+    }
+  }
+  
+  .free {
+    border-top: 4px solid #00b894;
+    
+    h3 {
+      color: #00b894;
+    }
+    
+    ul li:before {
+      color: #00b894;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      grid-template-columns: 1fr;
+    }
+    
+    .billing-options {
+      flex-direction: column;
+    }
+  }

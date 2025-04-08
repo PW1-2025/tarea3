@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Precios Modernos</title>
+    <!-- Incluir Foundation desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+        }
+
+        h1, h3 {
+            color: #2c3e50;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-divider {
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 15px 15px 0 0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .card-section h4 {
+            color: #e67e22;
+            font-size: 1.8rem;
+        }
+
+        .card-section ul {
+            list-style: none;
+            padding: 0;
+            color: #7f8c8d;
+        }
+
+        .card-section ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .button {
+            background-color: #2ecc71;
+            color: #fff;
+            border-radius: 50px;
+            padding: 0.7rem 2rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #27ae60;
+        }
+
+        .button.alert {
+            background-color: #e74c3c;
+        }
+
+        .button.alert:hover {
+            background-color: #c0392b;
+        }
+
+        .grid-container {
+            padding: 2rem 0;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contenedor principal -->
+<div class="grid-container">
+    <!-- Header -->
+    <header class="grid-x grid-padding-x align-middle text-center">
+        <div class="cell small-12">
+            <h1>Nuestros Planes y Precios</h1>
+            <p>Elige el plan que mejor se adapte a tus necesidades</p>
+        </div>
+    </header>
+
+    <!-- Sección de planes de precios -->
+    <section class="grid-x grid-padding-x align-middle text-center">
+        <!-- Plan Básico -->
+        <div class="cell small-12 medium-4">
+            <div class="card">
+                <div class="card-divider">
+                    <h3>Plan Básico</h3>
+                </div>
+                <div class="card-section">
+                    <h4>$9.99/mes</h4>
+                    <ul>
+                        <li>5 GB de Almacenamiento</li>
+                        <li>Soporte por Email</li>
+                        <li>1 Proyecto</li>
+                    </ul>
+                    <a href="#" class="button">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan Profesional -->
+        <div class="cell small-12 medium-4">
+            <div class="card">
+                <div class="card-divider">
+                    <h3>Plan Profesional</h3>
+                </div>
+                <div class="card-section">
+                    <h4>$29.99/mes</h4>
+                    <ul>
+                        <li>50 GB de Almacenamiento</li>
+                        <li>Soporte Prioritario</li>
+                        <li>10 Proyectos</li>
+                    </ul>
+                    <a href="#" class="button success">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan Empresarial -->
+        <div class="cell small-12 medium-4">
+            <div class="card">
+                <div class="card-divider">
+                    <h3>Plan Empresarial</h3>
+                </div>
+                <div class="card-section">
+                    <h4>$99.99/mes</h4>
+                    <ul>
+                        <li>100 GB de Almacenamiento</li>
+                        <li>Soporte 24/7</li>
+                        <li>Proyectos Ilimitados</li>
+                    </ul>
+                    <a href="#" class="button alert">Seleccionar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="grid-x grid-padding-x align-middle">
+        <div class="cell small-12 text-center">
+            <p>&copy; 2025 Mi Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Incluir Foundation JS desde CDN -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Completo de Float en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        .flotante {
+            float: left;
+            margin-right: 10px;
+            width: 150px;
+        }
+        .contenedor {
+            overflow: hidden; /* Evita el colapso del contenedor */
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .caja {
+            float: left;
+            width: 48%;
+            margin: 1%;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .contenido-principal {
+            float: left;
+            width: 65%;
+            background-color: #ddd;
+            padding: 10px;
+        }
+        .wrapper {
+            overflow: hidden; /* Asegura que el contenedor se expanda */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo Completo de Float en CSS</h2>
+    
+    <h3>¿Qué es float en CSS?</h3>
+    <p>La propiedad <code>float</code> en CSS permite posicionar elementos a la izquierda o derecha dentro de un contenedor, permitiendo que otros elementos fluyan a su alrededor. Aunque su uso ha disminuido con la llegada de Flexbox y Grid, sigue siendo útil en ciertos casos.</p>
+    
+    <p><strong>Valores posibles de float:</strong></p>
+    <ul>
+        <li><code>left</code>: El elemento flota a la izquierda.</li>
+        <li><code>right</code>: El elemento flota a la derecha.</li>
+        <li><code>none</code>: El elemento no flota (valor por defecto).</li>
+        <li><code>inherit</code>: Hereda el valor de su elemento padre.</li>
+    </ul>
+    
+    <div class="contenedor">
+        <img src="https://resizer.glanacion.com/resizer/v2/los-marineros-europeos-llamaban-a-los-gatos-con-2FGW7BZRWFBCJOY2BDX5OQYTJM.jpg?auth=e10bc8ad78d357860d9296c8db5ff8fa2ba683e9a23224cce1f09632ea2d5f6c&width=420&height=439&quality=70&smart=true" alt="Imagen flotante" class="flotante">
+        <p>Esta imagen flota a la izquierda y el texto la rodea. El contenedor usa <code>overflow: hidden;</code> para evitar el colapso.</p>
+    </div>
+    
+    <h3>Ejemplo de Columnas con Float</h3>
+    <div class="clearfix">
+        <div class="caja">Columna 1</div>
+        <div class="caja">Columna 2</div>
+    </div>
+    
+    <h3>Ejemplo de Barra Lateral (Sidebar)</h3>
+    <div class="wrapper">
+        <div class="contenido-principal">
+            <p>Este es el contenido principal. Se encuentra flotando a la izquierda y ocupa el 65% del ancho del contenedor.</p>
+        </div>
+        <div class="sidebar">
+            <p>Esta es una barra lateral. Flota a la derecha y ocupa el 30% del ancho.</p>
+        </div>
+    </div>
+    
+    <h3>Ejemplo de Clearfix para evitar colapso</h3>
+    <div class="contenedor clearfix">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpG9SdPnSj188gE-1Hn_irpiQxFbpUpLqQbbegoXlRgrwULEojMmVuLTWT5cuLtii9YCQ&usqp=CAU" alt="Imagen flotante" class="flotante">
+        <p>Cuando usamos <code>clearfix</code>, el contenedor reconoce los elementos flotantes y no colapsa.</p>
+    </div>
+    
+    <h3>Ejemplo de Float con Diferentes Anchos</h3>
+    <div class="clearfix">
+        <div class="caja" style="width: 30%; background-color: lightcoral;">30%</div>
+        <div class="caja" style="width: 65%; background-color: lightseagreen;">65%</div>
+    </div>
+    <button onclick="location.href='planesfloat.html'" style="background-color: #007bff; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">
+        Ejemplo con Float
+      </button>
+      
+
+    
+</body>
+</html>

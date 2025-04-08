@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Precios</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h2 {
+            color: #222;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+        .planes-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .plan {
+            width: 30%;
+            background: linear-gradient(135deg, #ffffff, #f1f1f1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .plan:hover {
+            transform: translateY(-10px);
+        }
+        .plan h3 {
+            color: #007BFF;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .precio {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+        .caracteristicas {
+            list-style: none;
+            padding: 0;
+            font-size: 1rem;
+        }
+        .caracteristicas li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #007BFF;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .boton:hover {
+            background: #0056b3;
+        }
+        @media (max-width: 900px) {
+            .plan {
+                width: 45%;
+            }
+        }
+        @media (max-width: 600px) {
+            .plan {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Planes y Precios</h2>
+    <div class="planes-container">
+        <div class="plan">
+            <h3>Básico</h3>
+            <p class="precio">$10/mes</p>
+            <ul class="caracteristicas">
+                <li>1 Usuario</li>
+                <li>5GB de Almacenamiento</li>
+                <li>Soporte Básico</li>
+            </ul>
+            <a href="#" class="boton">Elegir Plan</a>
+        </div>
+        <div class="plan">
+            <h3>Estándar</h3>
+            <p class="precio">$20/mes</p>
+            <ul class="caracteristicas">
+                <li>5 Usuarios</li>
+                <li>50GB de Almacenamiento</li>
+                <li>Soporte Prioritario</li>
+            </ul>
+            <a href="#" class="boton">Elegir Plan</a>
+        </div>
+        <div class="plan">
+            <h3>Premium</h3>
+            <p class="precio">$50/mes</p>
+            <ul class="caracteristicas">
+                <li>Usuarios Ilimitados</li>
+                <li>200GB de Almacenamiento</li>
+                <li>Soporte 24/7</li>
+            </ul>
+            <a href="#" class="boton">Elegir Plan</a>
+        </div>
+    </div>
+</body>
+</html>
