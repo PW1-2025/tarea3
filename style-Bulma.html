@@ -14,12 +14,16 @@
             background: white;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
+        #compare-section {
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
     </style>
 </head>
 <body>
 
-<!-- Navbar Sticky -->
-<nav class="navbar is-light">
+<nav class="navbar is-light p-2">
     <div class="navbar-brand">
         <a class="navbar-item" href="#">MiWeb</a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
@@ -31,7 +35,6 @@
 
     <div id="navMenu" class="navbar-menu">
         <div class="navbar-start">
-            <!-- Dropdown Único -->
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">Productos</a>
                 <div class="navbar-dropdown">
@@ -47,14 +50,12 @@
     </div>
 </nav>
 
-<!-- Sección de Precios -->
 <section class="section">
     <div class="container">
         <h1 class="title has-text-centered">Pricing</h1>
         <br>
         <div class="columns is-centered">
-            <!-- Plan Básico -->
-            <div class="column is-4">
+            <div class="column is-3">
                 <div class="box">
                     <h2 class="title is-4">Free</h2>
                     <p class="subtitle is-5"><strong>$0/mes</strong></p>
@@ -67,8 +68,7 @@
                 </div>
             </div>
 
-            <!-- Plan Estándar -->
-            <div class="column is-4">
+            <div class="column is-3">
                 <div class="box">
                     <h2 class="title is-4">Standard</h2>
                     <p class="subtitle is-5"><strong>$25/mes</strong></p>
@@ -81,8 +81,7 @@
                 </div>
             </div>
 
-            <!-- Plan Premium -->
-            <div class="column is-4">
+            <div class="column is-3">
                 <div class="box">
                     <h2 class="title is-4">Business</h2>
                     <p class="subtitle is-5"><strong>$50/mes</strong></p>
@@ -97,12 +96,11 @@
 
         </div>
         <br>
-        <!-- Botón de Comparación -->
         <div class="has-text-centered mt-5">
             <button id="compare-btn" class="button is-link">Comparar planes</button>
         </div>
         <br>
-        <!-- Tabla de Comparación -->
+
         <div id="compare-section" class="mt-5">
             <h2 class="title is-4 has-text-centered">Comparación de Planes</h2>
             <table class="table is-striped is-fullwidth">
@@ -144,16 +142,15 @@
         </div>
     </div>
 </section>
+<br>
 <footer class="footer has-background-light">
     <div class="container">
         <div class="columns">
-            <!-- Columna 1: Sobre Nosotros -->
             <div class="column">
                 <h3 class="title is-5">Sobre Nosotros</h3>
                 <p>Somos una empresa dedicada a ofrecer las mejores soluciones digitales para tu negocio.</p>
             </div>
 
-            <!-- Columna 2: Enlaces Rápidos -->
             <div class="column">
                 <h3 class="title is-5">Enlaces Rápidos</h3>
                 <ul>
@@ -164,7 +161,6 @@
                 </ul>
             </div>
 
-            <!-- Columna 3: Redes Sociales -->
             <div class="column">
                 <h3 class="title is-5">Síguenos</h3>
                 <div class="buttons">
@@ -175,12 +171,10 @@
             </div>
         </div>
 
-        <!-- Línea divisoria -->
         <hr>
 
-        <!-- Copyright -->
         <div class="has-text-centered">
-            <p>&copy; 2025 MiWeb. Todos los derechos reservados.</p>
+            <p>&copy; 2025 César Medina. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
@@ -196,7 +190,6 @@
             });
         });
 
-        // Función para mostrar/ocultar la tabla de comparación
         document.getElementById('compare-btn').addEventListener('click', () => {
             const compareSection = document.getElementById('compare-section');
             if (compareSection.style.display === "none" || compareSection.style.display === "") {
