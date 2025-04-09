@@ -1,0 +1,145 @@
+@use "sass:color";  // Importar el módulo adecuado para colores
+
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$background-color: #f4f4f4;
+$card-shadow: rgba(0, 0, 0, 0.1);
+$hover-color: color.adjust($primary-color, $lightness: -10%);  // Usar color.adjust()
+
+$font-family: 'Poppins', sans-serif;
+
+// Reset global de márgenes y padding
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: #333;
+  line-height: 1.6;
+}
+
+// Header
+.header {
+  background-color: $primary-color;
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+  }
+}
+
+// Sección de planes
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px $card-shadow;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .price {
+    font-size: 2em;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #555;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .plan {
+    width: 80%;
+    max-width: 400px;
+  }
+}
