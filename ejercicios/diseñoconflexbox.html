@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes y Precios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+      max-width: 80%;
+    }
+    .plan {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 1 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .plan h2 {
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .features {
+      list-style: none;
+      padding: 0;
+      flex-grow: 1;
+    }
+    .features li {
+      margin: 5px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="plan">
+    <h2>Básico</h2>
+    <p class="price">$10/mes</p>
+    <ul class="features">
+      <li>1 Usuario</li>
+      <li>5GB Almacenamiento</li>
+      <li>Soporte Básico</li>
+    </ul>
+    <a href="#" class="btn">Seleccionar</a>
+  </div>
+  <div class="plan">
+    <h2>Estándar</h2>
+    <p class="price">$20/mes</p>
+    <ul class="features">
+      <li>5 Usuarios</li>
+      <li>50GB Almacenamiento</li>
+      <li>Soporte Prioritario</li>
+    </ul>
+    <a href="#" class="btn">Seleccionar</a>
+  </div>
+  <div class="plan">
+    <h2>Premium</h2>
+    <p class="price">$30/mes</p>
+    <ul class="features">
+      <li>Usuarios Ilimitados</li>
+      <li>200GB Almacenamiento</li>
+      <li>Soporte 24/7</li>
+    </ul>
+    <a href="#" class="btn">Seleccionar</a>
+  </div>
+</div>
+</body>
+</html>
